@@ -1,0 +1,118 @@
+@import './base/vars';
+@import './base/mixins';
+
+.subscribe {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.subscribe__body {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    @include imageBackground(no-repeat, cover, center);
+    background-image: url(../img/subscribe.jpg);
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(191, 30, 119, .8);
+    }
+}
+
+.subscribe__content {
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 0 48px;
+    align-items: end;
+    padding: 0 70px;
+}
+
+.subscribe__content-block {
+    max-width: 342px;
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe__block-title {
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.subscribe__block-suptitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #fff;
+}
+
+.subscribe__content-form {
+    width: 100%;
+}
+
+.subscribe__form-input {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    grid-gap: 0 20px;
+    margin-bottom: 17px;
+}
+
+.subscribe__input {
+    width: 100%;
+    max-width: 388.5px;
+    height: 100%;
+    border-radius: 4px;
+    padding: 0 30px;
+    background: #FBF7F4;
+}
+
+.subscribe__btn {
+    width: 232px;
+    height: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    border-radius: 4px;
+    color: #fff;
+    background-color: $lightBlack;
+
+    &::after {
+        content: '';
+        width: 42.5px;
+        height: 8px;
+        display: inline-block;
+        margin-left: 20px;
+        @include imageBackground(no-repeat, cover, center);
+        background-image: url(../img/space-arrow.svg);
+    }
+}
+
+.subscribe__form-desc {
+    max-width: 453px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+    opacity: 0.8;
+    color: #fff;
+
+    a {
+        text-decoration: underline;
+        color: #fff;
+    }
+}

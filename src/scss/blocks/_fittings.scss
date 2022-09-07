@@ -1,0 +1,51 @@
+.fittings {
+    width: 100%;
+}
+
+.fittings-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.fittings__selection {
+    position: relative;
+    margin-bottom: 100px;
+
+    .watched__cart {
+        height: 545px;
+    }
+
+    .watched__cart-img {
+        height: 270px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        top: 50%;
+    }
+}
+
+.fittings__selection-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.fittings__list-item {
+    width: 160px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(191, 30, 119, 0.4);
+    border-radius: 4px;
+    margin-right: 30px;
+
+    &:last-child {
+        margin: 0;
+    }
+
+    img {
+        margin-right: 20px;
+    }
+}

@@ -1,0 +1,10 @@
+@mixin imageBackground($repeat, $size, $position) {
+    background-repeat: $repeat;
+    background-size: $size;
+    background-position: $position;
+}
+
+@mixin iconCenter() {
+    display: flex;
+    align-items: center;
+}

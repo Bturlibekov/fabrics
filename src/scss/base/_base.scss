@@ -1,0 +1,20 @@
+@import '../base/vars';
+@import '../base/mixins';
+
+body {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Montserrat;
+}
+
+.main__page {
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@import "./scroll";

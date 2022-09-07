@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include("html/blocks/head.html", { title: "Главная" })
+
+<body>
+    @@include("html/blocks/header.html", {})
+    <main class="main__page">
+        @@include("html/blocks/intro.html", {})
+        @@include("html/blocks/specials.html", {})
+        @@include("html/blocks/popular.html", {})
+        @@include("html/blocks/watched.html", {title: "Вы смотрели"})
+        @@include("html/blocks/subscribe.html", {})
+        
+    </main>
+    @@include("html/blocks/footer-home.html", {})
+    <script src="./js/app.min.js"></script>
+</body>
+
+</html>

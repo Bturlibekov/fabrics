@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include("html/blocks/head.html", { title: "Каталог" })
+
+<body>
+    @@include("html/blocks/header.html", {})
+    @@include("html/blocks/breads.html", { title: "Каталог" })
+    <main class="main__page">
+        @@include("html/blocks/catalogBlock.html", {})
+        @@include("html/blocks/subscribe.html", {})
+    </main>
+    @@include("html/blocks/footer-home.html", {})
+    <script src="./js/app.min.js"></script>
+</body>
+
+</html>

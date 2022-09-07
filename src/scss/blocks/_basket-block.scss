@@ -1,0 +1,157 @@
+.basket-block {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.basket__title {
+    margin-bottom: 30px;
+}
+
+.basket__row {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 100px;
+    grid-gap: 60px 0;
+}
+
+.basket__col {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.basket__col-product {
+    display: flex;
+    align-items: center;
+}
+
+.basket__product-img {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin-right: 25px;
+    border-radius: 10px;
+}
+
+.basket__product-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.basket__item-text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+    color: $pink;
+}
+
+.basket__item-title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    margin-bottom: 10px;
+    color: $pink;
+}
+
+.basket__item-price {
+    display: flex;
+    align-items: center;
+}
+
+.basket__price-current {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 150%;
+    margin-right: 20px;
+    color: $lightBlack;
+}
+
+.basket__price-previously {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    text-decoration-line: line-through;
+    opacity: 0.5;
+    color: $lightBlack;
+}
+
+.basket__col-info {
+    display: flex;
+    align-items: center;
+}
+
+.basket__info-amount {
+    button {
+        font-size: 15px;
+        color: $pink;
+    }
+
+    span {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        margin: 0 45px;
+        color: $lightBlack;
+    }
+}
+
+.basket__info-total {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 150%;
+    margin-left: 100px;
+    color: $lightBlack;
+}
+
+.basket__info-delete {
+    font-size: 30px;
+    margin-left: 30px;
+    color: $pink;
+}
+
+.methods-payment {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.methods-payment__links {
+    width: 360px;
+    display: flex;
+    align-items: center;
+}
+
+.methods-payment__text {
+    max-width: 75px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    margin-right: 30px;
+    color: $lightBlack;
+}
+
+.methods-payment__link {
+    width: 78px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+
+    &:last-child {
+        margin: 0;
+    }
+}
+
+.checkout--btn {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    color: #fff;
+    background-color: $pink;
+}

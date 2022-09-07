@@ -1,0 +1,30 @@
+@import './base/vars';
+@import './base/mixins';
+
+.intro {
+    width: 100%;
+}
+
+.intro__swiper {
+    position: relative;
+    overflow: hidden;
+}
+
+// .swiper-container {}
+
+// .intro__row {}
+
+.intro__column {
+    width: 100%;
+    height: 585px;
+    @include imageBackground(no-repeat, cover, right)
+}
+
+.intro__title {
+    max-width: 570px;
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 150%;
+    padding-top: 90px;
+    color: $pink;
+}

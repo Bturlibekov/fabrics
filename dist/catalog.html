@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Каталог</title>
+</head>
+
+<body>
+    <header class="header">
+    <div class="container">
+        <div class="header__top">
+            <a href="#" class="logo">ткани</a>
+            <div class="header__top-search">
+                <a href="#" class="address-link"><span class="icon-map"></span>Санкт-Петербург</a>
+                <input class="search" type="text" placeholder="Я ищу">
+            </div>
+            <div class="header__top-content">
+                <div class="header__top-info">
+                    <a href="#" class="header__info-number">8 800 900 70 90</a>
+                    <p class="header__info-graphic">Пн-вс: 10:00 - 21:00</p>
+                </div>
+                <div class="header__top-user">
+                    <a href="#" class="header__user-favorites icon-heart"></a>
+                    <span class="header__user-line"></span>
+                    <a href="#" class="header__user-info icon-user"></a>
+                    <div class="header__basket">
+                        <a href="#" class="header__user-basket icon-cart">12</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="header__menu">
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <a href="#" class="menu-link menu-link--active">Для одежды</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Для интерьера</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Мебельные</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Фурнитура</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Пряжа</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Новогодние</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Для шитья</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <div class="crumbs container">
+    <a href="#" class="crumbs__link crumbs__link--home"><span class="icon-home"></span>Главная</a>
+    <a href="#" class="crumbs__link crumbs__link">Каталог</a>
+</div>
+    <main class="main__page">
+        <section class="catalog">
+    <div class="container">
+        <div class="catalog__title">каталог</div>
+        <div class="catalog__body">
+            <div class="catalog__body-category">
+                <div class="catalog__category-list">
+                    <div class="popular__row popular__row--catalog">
+                        <div class="popular__column --pop-01" style="background-image: url(./img/pop-01.png);">
+                            <div class="popular__column-content">
+                                <a href="" class="popular__content-link">Лен и полулен</a>
+                            </div>
+                        </div>
+                        <div class="popular__column --pop-02" style="background-image: url(./img/pop-02.png);">
+                            <div class="popular__column-content">
+                                <a href="" class="popular__content-link">Хлопок</a>
+                            </div>
+                        </div>
+                        <div class="popular__column --pop-03" style="background-image: url(./img/pop-03.png);">
+                            <div class="popular__column-content">
+                                <a href="" class="popular__content-link">Вискоза</a>
+                            </div>
+                        </div>
+                        <div class="popular__column --pop-04" style="background-image: url(./img/pop-04.png);">
+                            <div class="popular__column-content">
+                                <a href="" class="popular__content-link">Новогодние ткани</a>
+                            </div>
+                        </div>
+                        <div class="popular__column --pop-05" style="background-image: url(./img/pop-05.png);">
+                            <div class="popular__column-content">
+                                <a href="" class="popular__content-link">Лен и полулен</a>
+                            </div>
+                        </div>
+                        <div class="popular__column --pop-06" style="background-image: url(./img/pop-06.png);">
+                            <div class="popular__column-content">
+                                <a href="" class="popular__content-link">Хлопок</a>
+                            </div>
+                        </div>
+                        <div class="popular__column --pop-07" style="background-image: url(./img/pop-07.png);">
+                            <div class="popular__column-content">
+                                <a href="" class="popular__content-link">Вискоза</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filters">
+	<div class="filters__title">Фильтры</div>
+	<div class="filters__item filters-price">
+		<div class="filters__type-title">Цена за метр</div>
+		<div class="filters-price__slider" id="range-slider"></div>
+		<div class="filters-price__inputs">
+			<label class="filters-price__label">
+				<span class="filters-price__text">от</span>
+				<input type="number" min="100000" max="500 000" placeholder="100 000" class="filters-price__input" id="input-0">
+			</label>
+			<label class="filters-price__label">
+				<span class="filters-price__text">до</span>
+				<input type="number" min="100000" max="500 000" placeholder="500 000" class="filters-price__input" id="input-1">
+			</label>
+		</div>
+	</div>
+	<div class="filters__item filters-price">
+		<div class="filters__type-title">Ширина</div>
+		<div class="filters-price__slider" id="range-slider-2"></div>
+		<div class="filters-price__inputs">
+			<label class="filters-price__label">
+				<span class="filters-price__text">от</span>
+				<input type="number" min="100000" max="500 000" placeholder="100 000" class="filters-price__input"
+					id="input-0-second">
+			</label>
+			<label class="filters-price__label">
+				<span class="filters-price__text">до</span>
+				<input type="number" min="100000" max="500 000" placeholder="500 000" class="filters-price__input"
+					id="input-1-second">
+			</label>
+		</div>
+	</div>
+	<div class="filters__item filters-price">
+		<div class="filters__type-title">Плотность</div>
+		<div class="filters-price__slider" id="range-slider-3"></div>
+		<div class="filters-price__inputs">
+			<label class="filters-price__label">
+				<span class="filters-price__text">от</span>
+				<input type="number" min="100000" max="500 000" placeholder="100 000" class="filters-price__input"
+					id="input-0-three">
+			</label>
+			<label class="filters-price__label">
+				<span class="filters-price__text">до</span>
+				<input type="number" min="100000" max="500 000" placeholder="500 000" class="filters-price__input"
+					id="input-1-three">
+			</label>
+		</div>
+	</div>
+</div>
+                    <div class="catalog__type">
+                        <div class="catalog__type-item" data-type="cloth">
+                            <div class="catalog__item-header">Тип ткани</div>
+                            <div class="catalog__type-dropdown" data-value="cloth">
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-1" checked />
+                                    <label for="checkbox-1"></label>
+                                    <p class="checkbox-text">Акрил</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-2" checked />
+                                    <label for="checkbox-2"></label>
+                                    <p class="checkbox-text">Альпака</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-3" />
+                                    <label for="checkbox-3"></label>
+                                    <p class="checkbox-text">Атлас</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-4" />
+                                    <label for="checkbox-4"></label>
+                                    <p class="checkbox-text">Ацетат</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-5" />
+                                    <label for="checkbox-5"></label>
+                                    <p class="checkbox-text">Бархат</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-6" />
+                                    <label for="checkbox-6"></label>
+                                    <p class="checkbox-text">Батист</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-7" />
+                                    <label for="checkbox-7"></label>
+                                    <p class="checkbox-text">Батист</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-8" />
+                                    <label for="checkbox-8"></label>
+                                    <p class="checkbox-text">Батист</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-9" />
+                                    <label for="checkbox-9"></label>
+                                    <p class="checkbox-text">Батист</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__type-item" data-type="picture">
+                            <div class="catalog__item-header">Рисунок</div>
+                            <div class="catalog__type-dropdown" data-value="picture">
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-1" checked />
+                                    <label for="checkbox-1"></label>
+                                    <p class="checkbox-text">Акрил</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-2" checked />
+                                    <label for="checkbox-2"></label>
+                                    <p class="checkbox-text">Альпака</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-3" />
+                                    <label for="checkbox-3"></label>
+                                    <p class="checkbox-text">Атлас</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-4" />
+                                    <label for="checkbox-4"></label>
+                                    <p class="checkbox-text">Ацетат</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-5" />
+                                    <label for="checkbox-5"></label>
+                                    <p class="checkbox-text">Бархат</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-6" />
+                                    <label for="checkbox-6"></label>
+                                    <p class="checkbox-text">Батист</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-7" />
+                                    <label for="checkbox-7"></label>
+                                    <p class="checkbox-text">Батист</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-8" />
+                                    <label for="checkbox-8"></label>
+                                    <p class="checkbox-text">Батист</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-9" />
+                                    <label for="checkbox-9"></label>
+                                    <p class="checkbox-text">Батист</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__type-item" data-type="appointment">
+                            <div class="catalog__item-header">Назначение</div>
+                            <div class="catalog__type-dropdown" data-value="appointment">
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-1" checked />
+                                    <label for="checkbox-1"></label>
+                                    <p class="checkbox-text">Акрил</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-2" checked />
+                                    <label for="checkbox-2"></label>
+                                    <p class="checkbox-text">Альпака</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-3" />
+                                    <label for="checkbox-3"></label>
+                                    <p class="checkbox-text">Атлас</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-4" />
+                                    <label for="checkbox-4"></label>
+                                    <p class="checkbox-text">Ацетат</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-5" />
+                                    <label for="checkbox-5"></label>
+                                    <p class="checkbox-text">Бархат</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-6" />
+                                    <label for="checkbox-6"></label>
+                                    <p class="checkbox-text">Батист</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-7" />
+                                    <label for="checkbox-7"></label>
+                                    <p class="checkbox-text">Батист</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-8" />
+                                    <label for="checkbox-8"></label>
+                                    <p class="checkbox-text">Батист</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-9" />
+                                    <label for="checkbox-9"></label>
+                                    <p class="checkbox-text">Батист</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__type-item" data-type="color">
+                            <div class="catalog__item-header">Цвет</div>
+                            <div class="catalog__type-dropdown" data-value="color">
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-1" checked />
+                                    <label for="checkbox-1"></label>
+                                    <p class="checkbox-text">Акрил</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-2" checked />
+                                    <label for="checkbox-2"></label>
+                                    <p class="checkbox-text">Альпака</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-3" />
+                                    <label for="checkbox-3"></label>
+                                    <p class="checkbox-text">Атлас</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-4" />
+                                    <label for="checkbox-4"></label>
+                                    <p class="checkbox-text">Ацетат</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-5" />
+                                    <label for="checkbox-5"></label>
+                                    <p class="checkbox-text">Бархат</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-6" />
+                                    <label for="checkbox-6"></label>
+                                    <p class="checkbox-text">Батист</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-7" />
+                                    <label for="checkbox-7"></label>
+                                    <p class="checkbox-text">Батист</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-8" />
+                                    <label for="checkbox-8"></label>
+                                    <p class="checkbox-text">Батист</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-9" />
+                                    <label for="checkbox-9"></label>
+                                    <p class="checkbox-text">Батист</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__type-item" data-type="peculiarities">
+                            <div class="catalog__item-header">Особенности</div>
+                            <div class="catalog__type-dropdown" data-value="peculiarities">
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-1" checked />
+                                    <label for="checkbox-1"></label>
+                                    <p class="checkbox-text">Акрил</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-2" checked />
+                                    <label for="checkbox-2"></label>
+                                    <p class="checkbox-text">Альпака</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-3" />
+                                    <label for="checkbox-3"></label>
+                                    <p class="checkbox-text">Атлас</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-4" />
+                                    <label for="checkbox-4"></label>
+                                    <p class="checkbox-text">Ацетат</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-5" />
+                                    <label for="checkbox-5"></label>
+                                    <p class="checkbox-text">Бархат</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-6" />
+                                    <label for="checkbox-6"></label>
+                                    <p class="checkbox-text">Батист</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-7" />
+                                    <label for="checkbox-7"></label>
+                                    <p class="checkbox-text">Батист</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-8" />
+                                    <label for="checkbox-8"></label>
+                                    <p class="checkbox-text">Батист</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-9" />
+                                    <label for="checkbox-9"></label>
+                                    <p class="checkbox-text">Батист</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__type-item" data-type="composition">
+                            <div class="catalog__item-header">Состав</div>
+                            <div class="catalog__type-dropdown" data-value="composition">
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-1" checked />
+                                    <label for="checkbox-1"></label>
+                                    <p class="checkbox-text">Акрил</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-2" checked />
+                                    <label for="checkbox-2"></label>
+                                    <p class="checkbox-text">Альпака</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-3" />
+                                    <label for="checkbox-3"></label>
+                                    <p class="checkbox-text">Атлас</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-4" />
+                                    <label for="checkbox-4"></label>
+                                    <p class="checkbox-text">Ацетат</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-5" />
+                                    <label for="checkbox-5"></label>
+                                    <p class="checkbox-text">Бархат</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-6" />
+                                    <label for="checkbox-6"></label>
+                                    <p class="checkbox-text">Батист</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-7" />
+                                    <label for="checkbox-7"></label>
+                                    <p class="checkbox-text">Батист</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-8" />
+                                    <label for="checkbox-8"></label>
+                                    <p class="checkbox-text">Батист</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-9" />
+                                    <label for="checkbox-9"></label>
+                                    <p class="checkbox-text">Батист</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__type-item" data-type="manufacturer">
+                            <div class="catalog__item-header">Cтрана производитель</div>
+                            <div class="catalog__type-dropdown" data-value="manufacturer">
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-1" checked />
+                                    <label for="checkbox-1"></label>
+                                    <p class="checkbox-text">Акрил</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-2" checked />
+                                    <label for="checkbox-2"></label>
+                                    <p class="checkbox-text">Альпака</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-3" />
+                                    <label for="checkbox-3"></label>
+                                    <p class="checkbox-text">Атлас</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-4" />
+                                    <label for="checkbox-4"></label>
+                                    <p class="checkbox-text">Ацетат</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-5" />
+                                    <label for="checkbox-5"></label>
+                                    <p class="checkbox-text">Бархат</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-6" />
+                                    <label for="checkbox-6"></label>
+                                    <p class="checkbox-text">Батист</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-7" />
+                                    <label for="checkbox-7"></label>
+                                    <p class="checkbox-text">Батист</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-8" />
+                                    <label for="checkbox-8"></label>
+                                    <p class="checkbox-text">Батист</p>
+                                </div>
+                                <div class="checkbox checkbox-1">
+                                    <input type="checkbox" id="checkbox-9" />
+                                    <label for="checkbox-9"></label>
+                                    <p class="checkbox-text">Батист</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__category-btns">
+                    <button id="apply" class="apply-btn">Применить</button>
+                    <button id="reset" class="reset-btn">Сбросить</button>
+                </div>
+            </div>
+            <div class="catalog__category-products">
+                <div class="catalog__category-sort">
+                    <div class="watched__cart">
+                        <div class="watched__cart-img" style="background-image: url(./img/watched-01.png);">
+                            <button class="watched__img-link icon-heart"></button>
+                        </div>
+                        <div class="watched__cart-content">
+                            <div class="watched__content-header">
+                                <div class="watched__header-type">Рогожка</div>
+                                <div class="watched__header-title">Альпийская деревенька</div>
+                            </div>
+                            <ul class="watched__content-list">
+                                <li class="watched__list-item">
+                                    <b>Ширина</b> 1.5м
+                                </li>
+                                <li class="watched__list-item">
+                                    <b>Состав</b> 100%
+                                </li>
+                                <li class="watched__list-item">
+                                    <b>Плотность</b> 170 гр/м2
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="watched__cart-price">
+                            <span class="watched__price-desc">240 ₽</span>
+                            <a href="" class="watched__price-link">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="watched__cart">
+                        <div class="watched__cart-img" style="background-image: url(./img/watched-02.png);">
+                            <button class="watched__img-link icon-heart"></button>
+                        </div>
+                        <div class="watched__cart-content">
+                            <div class="watched__content-header">
+                                <div class="watched__header-type">Рогожка</div>
+                                <div class="watched__header-title">Альпийская деревенька</div>
+                            </div>
+                            <ul class="watched__content-list">
+                                <li class="watched__list-item">
+                                    <b>Ширина</b> 1.5м
+                                </li>
+                                <li class="watched__list-item">
+                                    <b>Состав</b> 100%
+                                </li>
+                                <li class="watched__list-item">
+                                    <b>Плотность</b> 170 гр/м2
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="watched__cart-price">
+                            <span class="watched__price-desc">240 ₽</span>
+                            <a href="" class="watched__price-link">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="watched__cart">
+                        <div class="watched__cart-img" style="background-image: url(./img/watched-03.png);">
+                            <button class="watched__img-link icon-heart"></button>
+                        </div>
+                        <div class="watched__cart-content">
+                            <div class="watched__content-header">
+                                <div class="watched__header-type">Рогожка</div>
+                                <div class="watched__header-title">Альпийская деревенька</div>
+                            </div>
+                            <ul class="watched__content-list">
+                                <li class="watched__list-item">
+                                    <b>Ширина</b> 1.5м
+                                </li>
+                                <li class="watched__list-item">
+                                    <b>Состав</b> 100%
+                                </li>
+                                <li class="watched__list-item">
+                                    <b>Плотность</b> 170 гр/м2
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="watched__cart-price">
+                            <span class="watched__price-desc">240 ₽</span>
+                            <a href="" class="watched__price-link">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="watched__cart">
+                        <div class="watched__cart-img" style="background-image: url(./img/watched-01.png);">
+                            <button class="watched__img-link icon-heart"></button>
+                        </div>
+                        <div class="watched__cart-content">
+                            <div class="watched__content-header">
+                                <div class="watched__header-type">Рогожка</div>
+                                <div class="watched__header-title">Альпийская деревенька</div>
+                            </div>
+                            <ul class="watched__content-list">
+                                <li class="watched__list-item">
+                                    <b>Ширина</b> 1.5м
+                                </li>
+                                <li class="watched__list-item">
+                                    <b>Состав</b> 100%
+                                </li>
+                                <li class="watched__list-item">
+                                    <b>Плотность</b> 170 гр/м2
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="watched__cart-price">
+                            <span class="watched__price-desc">240 ₽</span>
+                            <a href="" class="watched__price-link">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="watched__cart">
+                        <div class="watched__cart-img" style="background-image: url(./img/watched-02.png);">
+                            <button class="watched__img-link icon-heart"></button>
+                        </div>
+                        <div class="watched__cart-content">
+                            <div class="watched__content-header">
+                                <div class="watched__header-type">Рогожка</div>
+                                <div class="watched__header-title">Альпийская деревенька</div>
+                            </div>
+                            <ul class="watched__content-list">
+                                <li class="watched__list-item">
+                                    <b>Ширина</b> 1.5м
+                                </li>
+                                <li class="watched__list-item">
+                                    <b>Состав</b> 100%
+                                </li>
+                                <li class="watched__list-item">
+                                    <b>Плотность</b> 170 гр/м2
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="watched__cart-price">
+                            <span class="watched__price-desc">240 ₽</span>
+                            <a href="" class="watched__price-link">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="watched__cart">
+                        <div class="watched__cart-img" style="background-image: url(./img/watched-03.png);">
+                            <button class="watched__img-link icon-heart"></button>
+                        </div>
+                        <div class="watched__cart-content">
+                            <div class="watched__content-header">
+                                <div class="watched__header-type">Рогожка</div>
+                                <div class="watched__header-title">Альпийская деревенька</div>
+                            </div>
+                            <ul class="watched__content-list">
+                                <li class="watched__list-item">
+                                    <b>Ширина</b> 1.5м
+                                </li>
+                                <li class="watched__list-item">
+                                    <b>Состав</b> 100%
+                                </li>
+                                <li class="watched__list-item">
+                                    <b>Плотность</b> 170 гр/м2
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="watched__cart-price">
+                            <span class="watched__price-desc">240 ₽</span>
+                            <a href="" class="watched__price-link">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="watched__cart">
+                        <div class="watched__cart-img" style="background-image: url(./img/watched-01.png);">
+                            <button class="watched__img-link icon-heart"></button>
+                        </div>
+                        <div class="watched__cart-content">
+                            <div class="watched__content-header">
+                                <div class="watched__header-type">Рогожка</div>
+                                <div class="watched__header-title">Альпийская деревенька</div>
+                            </div>
+                            <ul class="watched__content-list">
+                                <li class="watched__list-item">
+                                    <b>Ширина</b> 1.5м
+                                </li>
+                                <li class="watched__list-item">
+                                    <b>Состав</b> 100%
+                                </li>
+                                <li class="watched__list-item">
+                                    <b>Плотность</b> 170 гр/м2
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="watched__cart-price">
+                            <span class="watched__price-desc">240 ₽</span>
+                            <a href="" class="watched__price-link">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="watched__cart">
+                        <div class="watched__cart-img" style="background-image: url(./img/watched-02.png);">
+                            <button class="watched__img-link icon-heart"></button>
+                        </div>
+                        <div class="watched__cart-content">
+                            <div class="watched__content-header">
+                                <div class="watched__header-type">Рогожка</div>
+                                <div class="watched__header-title">Альпийская деревенька</div>
+                            </div>
+                            <ul class="watched__content-list">
+                                <li class="watched__list-item">
+                                    <b>Ширина</b> 1.5м
+                                </li>
+                                <li class="watched__list-item">
+                                    <b>Состав</b> 100%
+                                </li>
+                                <li class="watched__list-item">
+                                    <b>Плотность</b> 170 гр/м2
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="watched__cart-price">
+                            <span class="watched__price-desc">240 ₽</span>
+                            <a href="" class="watched__price-link">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="watched__cart">
+                        <div class="watched__cart-img" style="background-image: url(./img/watched-03.png);">
+                            <button class="watched__img-link icon-heart"></button>
+                        </div>
+                        <div class="watched__cart-content">
+                            <div class="watched__content-header">
+                                <div class="watched__header-type">Рогожка</div>
+                                <div class="watched__header-title">Альпийская деревенька</div>
+                            </div>
+                            <ul class="watched__content-list">
+                                <li class="watched__list-item">
+                                    <b>Ширина</b> 1.5м
+                                </li>
+                                <li class="watched__list-item">
+                                    <b>Состав</b> 100%
+                                </li>
+                                <li class="watched__list-item">
+                                    <b>Плотность</b> 170 гр/м2
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="watched__cart-price">
+                            <span class="watched__price-desc">240 ₽</span>
+                            <a href="" class="watched__price-link">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="watched__cart">
+                        <div class="watched__cart-img" style="background-image: url(./img/watched-01.png);">
+                            <button class="watched__img-link icon-heart"></button>
+                        </div>
+                        <div class="watched__cart-content">
+                            <div class="watched__content-header">
+                                <div class="watched__header-type">Рогожка</div>
+                                <div class="watched__header-title">Альпийская деревенька</div>
+                            </div>
+                            <ul class="watched__content-list">
+                                <li class="watched__list-item">
+                                    <b>Ширина</b> 1.5м
+                                </li>
+                                <li class="watched__list-item">
+                                    <b>Состав</b> 100%
+                                </li>
+                                <li class="watched__list-item">
+                                    <b>Плотность</b> 170 гр/м2
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="watched__cart-price">
+                            <span class="watched__price-desc">240 ₽</span>
+                            <a href="" class="watched__price-link">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="watched__cart">
+                        <div class="watched__cart-img" style="background-image: url(./img/watched-02.png);">
+                            <button class="watched__img-link icon-heart"></button>
+                        </div>
+                        <div class="watched__cart-content">
+                            <div class="watched__content-header">
+                                <div class="watched__header-type">Рогожка</div>
+                                <div class="watched__header-title">Альпийская деревенька</div>
+                            </div>
+                            <ul class="watched__content-list">
+                                <li class="watched__list-item">
+                                    <b>Ширина</b> 1.5м
+                                </li>
+                                <li class="watched__list-item">
+                                    <b>Состав</b> 100%
+                                </li>
+                                <li class="watched__list-item">
+                                    <b>Плотность</b> 170 гр/м2
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="watched__cart-price">
+                            <span class="watched__price-desc">240 ₽</span>
+                            <a href="" class="watched__price-link">В корзину</a>
+                        </div>
+                    </div>
+                    <div class="watched__cart">
+                        <div class="watched__cart-img" style="background-image: url(./img/watched-03.png);">
+                            <button class="watched__img-link icon-heart"></button>
+                        </div>
+                        <div class="watched__cart-content">
+                            <div class="watched__content-header">
+                                <div class="watched__header-type">Рогожка</div>
+                                <div class="watched__header-title">Альпийская деревенька</div>
+                            </div>
+                            <ul class="watched__content-list">
+                                <li class="watched__list-item">
+                                    <b>Ширина</b> 1.5м
+                                </li>
+                                <li class="watched__list-item">
+                                    <b>Состав</b> 100%
+                                </li>
+                                <li class="watched__list-item">
+                                    <b>Плотность</b> 170 гр/м2
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="watched__cart-price">
+                            <span class="watched__price-desc">240 ₽</span>
+                            <a href="" class="watched__price-link">В корзину</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__pages">
+                    <div class="catalog__pages-item">
+                        <span class="pages--id --active">1</span>
+                        <span class="pages--id">2</span>
+                        <span class="pages--id">3</span>
+                        <span class="pages--id">4</span>
+                        <span class="pages--id">...</span>
+                        <span class="pages--id page--id__last">11</span>
+                        <button class="icon-chevron next"></button>
+                    </div>
+                    <div class="catalog__pages-all">
+                        <p class="catalog__pages-text">Показывать на странице:</p>
+                        <div class="catalog__pages-number">
+                            <p>12</p>
+                            <span class="icon-chevron"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="subscribe">
+    <div class="container">
+        <div class="subscribe__body">
+            <div class="subscribe__content">
+                <div class="subscribe__content-block">
+                    <div class="subscribe__block-title">Подпишитесь на рассылку</div>
+                    <div class="subscribe__block-suptitle">Будьте в курсе наших акций</div>
+                </div>
+                <div class="subscribe__content-form">
+                    <div class="subscribe__form-input">
+                        <input class="subscribe__input" type="text" placeholder="Ваша почта">
+                        <button type="submit" class="subscribe__btn">Подписаться</button>
+                    </div>
+                    <div class="subscribe__form-desc">
+                        Нажимая кнопку, вы даете согласие на обработку ваших персональных данных в соответствии с <a href="">Политикой Конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+    <footer class="footer footer--home">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__inner-block">
+                <div class="footer__inner-contacts">
+                    <div class="footer__title">Наши контакты</div>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#">8 800 900 70 90</a></li>
+                        <li class="footer__item">г. Орск Проспект Ленина 71 / А</li>
+                        <li class="footer__item">Пн-вс: 10:00 - 21:00<br>без выходных</li>
+                    </ul>
+                    <div class="footer__socials">
+                        <a href="#"><span style="background-image: url(./img/instagram.svg);"></span></a>
+                        <a href="#"><span style="background-image: url(./img/vk.svg);"></span></a>
+                    </div>
+                </div>
+                <div class="footer__line"></div>
+                <div class="footer__inner-payment">
+                    <div class="footer__title">Способы оплаты</div>
+                    <ul class="footer__payment-list">
+                        <a href="#" style="background-image: url(./img/Visa.png);"></a>
+                        <a href="#" style="background-image: url(./img/PayPal.png);"></a>
+                        <a href="#" style="background-image: url(./img/MasterCard.png);"></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__inner-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d4490.876054492094!2d37.6154844!3d55.7508927!3m2!1i1024!2i768!4f13.1!2m1!1z0LrRgNC10LzQu9GM!5e0!3m2!1sru!2s!4v1660204074458!5m2!1sru!2s"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="./js/app.min.js"></script>
+</body>
+
+</html>

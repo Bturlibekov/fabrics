@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Верстка «Фабрикс»</title>
+</head>
+
+<body>
+    <div class="rootpage">
+        <h1>Верстка «Фабрикс»</h1>
+        <div class="rootpage__info">
+            Особенности проекта
+        </div>
+        <h2>Готовые страницы:</h2>
+        <ol class="rootpage__list">
+            <li><a target="_blank" href="home.html">Главная</a></li>
+            <li><a target="_blank" href="catalog.html">Каталог</a></li>
+            <li><a target="_blank" href="product-review.html">Продукт</a></li>
+            <li><a target="_blank" href="contacts.html">Контакты</a></li>
+            <li><a target="_blank" href="history.html">История покупок</a></li>
+            <li><a target="_blank" href="favorites.html">Избранное</a></li>
+            <li><a target="_blank" href="basket.html">Корзина</a></li>
+            <li><a target="_blank" href="ordering.html">Оформление заказа</a></li>
+            <li><a target="_blank" href="personal-area.html">Личный кабинет</a></li>
+            <li><a target="_blank" href="payment.html">Оплата</a></li>
+            <li><a target="_blank" href="delivery.html">Доставка</a></li>
+        </ol>
+        <div class="rootpage__tnx">
+            <h2>Спасибо за заказ!</h2>
+            <p>Буду рад (а) хорошему отзыву.</p>
+            <p>Обращайтесь еще!</p>
+        </div>
+        <div class="rootpage__contacts">
+            <h2>Мои контакты:</h2>
+            <p>Почта: <a href="mailto:bturlibekov17@gmail.com">bturlibekov17@gmail.com</a></p>
+            <p>Телефон: <a href="tel:+998999941227">+998999941227</a></p>
+            <p>Соц. сеть: <a href="https://t.me/bturlibekov17" target="_blank">ссылка на Telegram</a></p>
+        </div>
+    </div>
+</body>
+<style>
+    @charset "UTF-8";
+    @import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+    *,
+    *::before,
+    *::after {
+        padding: 0px;
+        margin: 0px;
+        border: 0px;
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        min-width: 320px;
+        width: 100%;
+        color: #fff;
+        background-color: #5C6F68;
+    }
+
+    body {
+        font-family: Montserrat;
+        font-size: 100%;
+        line-height: 1;
+        font-size: 1rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: #BFBFBF;
+    }
+
+    a:hover {
+        color: #fff;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    img {
+        vertical-align: top;
+    }
+
+    .wrapper {
+        width: 100%;
+        min-height: 100%;
+        overflow: hidden;
+    }
+
+    .rootpage {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    @media (max-width: 767px) {
+        .rootpage {
+            padding: 30px 15px;
+        }
+    }
+
+    h1 {
+        color: #fff;
+        font-size: 2.5rem;
+        margin: 0px 0px 1.25rem 0px;
+    }
+
+    @media (max-width: 767px) {
+        h1 {
+            font-size: 1.85rem;
+            margin: 0px 0px 1.25rem 0px;
+        }
+    }
+
+    h2 {
+        color: #fff;
+        font-size: 1.25rem;
+        margin: 0px 0px 1rem 0px;
+    }
+
+    @media (max-width: 767px) {
+        h2 {
+            font-size: 1.125rem;
+            margin: 0px 0px 1rem 0px;
+        }
+    }
+
+    .rootpage__info {
+        line-height: 140%;
+        margin: 0px 0px 1.5rem 0px;
+    }
+
+    .rootpage__list {
+        margin: 0px 0px 2.25rem 1.25rem;
+    }
+
+    .rootpage__list li:not(:last-child) {
+        margin: 0px 0px 15px 0px;
+    }
+
+    .rootpage__contacts,
+    .rootpage__tnx {
+        border-radius: 200px;
+        padding: 20px 65px;
+        line-height: 140%;
+    }
+
+    @media (max-width: 767px) {
+
+        .rootpage__contacts,
+        .rootpage__tnx {
+            border-radius: 40px;
+            padding: 20px;
+        }
+    }
+
+    .rootpage__contacts {
+        background: darkslategray;
+
+    }
+
+    .rootpage__contacts a {
+        color: #BFBFBF;
+    }
+    .rootpage__contacts a:hover {
+        color: #fff;
+    }
+
+    .rootpage__tnx {
+        background: darkslategray;
+        margin: 0px 0px 1rem 0px;
+    }
+</style>
+
+</html>

@@ -1,0 +1,154 @@
+@import './base/vars';
+@import './base/mixins';
+
+.header {
+    width: 100%;
+    padding: 15px 0;
+}
+
+.header__top {
+    display: grid;
+    grid-template-columns: 174px 492px 366px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: $pink;
+}
+
+.header__top-search {
+    display: flex;
+}
+
+.address-link {
+    min-width: 133px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+    margin-right: 50px;
+    color: $lightBlack;
+
+    span {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+}
+
+.search {
+    width: 100%;
+    max-width: 310px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+    padding: 11px 16px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    color: $lightBlack;
+    background: #FBF7F4;
+}
+
+.header__top-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+.header__top-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__info-number {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: $lightBlack;
+}
+
+.header__info-graphic {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: end;
+    color: $lightBlack;
+}
+
+.header__top-user {
+    display: flex;
+    grid-gap: 0 20px;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #FBF7F4;
+}
+
+.header__user-line {
+    width: 1px;
+    height: 20px;
+    display: block;
+    background-color: $pink;
+}
+
+.header__user-favorites {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: $pink;
+}
+
+.header__user-info {
+    font-size: 16px;
+    color: $pink;
+}
+
+.header__basket {
+    width: 73px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $pink;
+}
+
+.header__user-basket {
+    display: flex;
+    align-items: center;
+    color: #fff !important;
+
+    &::before {
+        margin-right: 10px;
+    }
+}
+
+.header__menu {
+    opacity: 1;
+    visibility: 1;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+// .menu-item {}
+
+.menu-link {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    color: $lightBlack;
+
+    &:hover,
+    &.menu-link--active {
+        color: $pink;
+    }
+}
